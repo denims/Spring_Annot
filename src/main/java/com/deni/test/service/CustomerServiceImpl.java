@@ -2,12 +2,15 @@ package com.deni.test.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.deni.test.model.Customer;
 import com.deni.test.repository.CustomerRepo;
-import com.deni.test.repository.CustomerRepoImpl;
 
+@Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
-
+	@Autowired
 	private CustomerRepo customerRepo;
 	
 
